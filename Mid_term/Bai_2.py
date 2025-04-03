@@ -17,10 +17,8 @@ def main():
             raise ValueError("Số nhập vào phải là số nguyên không âm.")
         ketqua = giaithua(n)
         print(f"Giai thừa của {n} là: {ketqua}")
-    except ValueError as e:
-        print(e)
-    except Exception as e:
-        print("Đã xảy ra lỗi:", e)
+    except ValueError:
+        print("Số nhập vào không hợp lệ. Vui lòng nhập một số nguyên không âm.")
 
 print("Chương trình tính giai thừa của một số nguyên không âm")
 main()
